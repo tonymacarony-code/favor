@@ -1,0 +1,37 @@
+.slider {
+  &__container {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+    max-height: 579px;
+
+    img {
+      width: 100%;
+    }
+    h1,
+    p {
+      position: absolute;
+      margin-left: 43px;
+      text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      top: 126px;
+      font-family: "Adigiana Extreme";
+      font-size: 88px;
+      color: #fff;
+      font-weight: 400;
+      max-width: 785px;
+      line-height: 80px;
+    }
+    p {
+      top: 350px;
+      max-width: 445px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

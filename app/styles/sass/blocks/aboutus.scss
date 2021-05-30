@@ -1,0 +1,21 @@
+.aboutus {
+  margin-top: 112px;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    margin-right: 43px;
+    h2 {
+      margin: 0;
+    }
+    p {
+      max-width: 395px;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+  }
+}

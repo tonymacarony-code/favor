@@ -1,0 +1,42 @@
+.header {
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.08);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 28px;
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 600;
+          transition: all 0.3s;
+          &:hover {
+            color: $btn;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__link {
+    background-color: $btn;
+    padding: 12px 17px;
+    border-radius: 38px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #ffdb7e;
+    }
+  }
+}
