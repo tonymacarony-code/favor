@@ -1,0 +1,240 @@
+.main {
+  &-aboutus {
+    margin-top: 112px;
+    &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__content {
+      margin-right: 43px;
+      h2 {
+        margin: 0;
+      }
+      p {
+        max-width: 395px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+      }
+    }
+    &__features {
+      margin-top: 123px;
+      h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 67px;
+      }
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__card {
+      &-image {
+        text-align: center;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #373f41;
+        justify-content: center;
+        margin-top: 11px;
+        margin-bottom: 0;
+        line-height: 24px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        max-width: 405px;
+        font-size: 14px;
+        color: #373f41;
+        font-weight: 400;
+        line-height: 20px;
+        max-height: 42px;
+      }
+    }
+    .second-row {
+      margin-top: 73px;
+    }
+  }
+  &-our_products {
+    h2 {
+      text-align: center;
+      margin-top: 139px;
+    }
+    a {
+      text-decoration: none;
+    }
+    &__cards {
+      margin-top: 108px;
+      display: flex;
+      justify-content: center;
+    }
+    &__card {
+      margin-right: 48px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      h5 {
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+      }
+    }
+  }
+  &-partners {
+    margin-top: 130px;
+    h2 {
+      text-align: center;
+    }
+    &__row {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  &-story {
+    margin-top: 139px;
+    h2 {
+      text-align: center;
+    }
+    a {
+      text-align: center;
+    }
+    &__group {
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: center;
+      &:first-child {
+        margin-top: 61px;
+      }
+      img {
+        border-radius: 6px;
+        width: 100%;
+      }
+      h2 {
+        text-align: left;
+      }
+      &-content {
+        p {
+          max-width: 488px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    &__link {
+      text-align: center;
+      margin-top: 56px;
+    }
+    .left-side {
+      margin-right: 72px;
+    }
+    .right-side {
+      margin-left: 72px;
+    }
+  }
+  &-news {
+    h2 {
+      text-align: center;
+      margin-top: 139px;
+      margin-bottom: 48px;
+    }
+    &__items {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 71px;
+    }
+    &__link {
+      text-align: center;
+    }
+    &__item {
+      margin-right: 87px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &-image {
+        img {
+          border-radius: 6px;
+          width: 100%;
+        }
+      }
+      &-date {
+        margin-top: 23px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        color: #106ff3;
+        position: relative;
+        &::before {
+          content: "\f073";
+          position: absolute;
+          font-family: "icomoon";
+          font-size: 12px;
+          left: -20px;
+          top: -1px;
+        }
+      }
+      &-title {
+        max-width: 295px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        max-height: 62px;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      p {
+        max-width: 295px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        max-height: 109px;
+      }
+      &-read {
+        position: relative;
+
+        &:hover {
+          text-decoration: underline;
+        }
+        &::after {
+          content: "\e902";
+          font-family: "icomoon";
+          color: #106ff3;
+          font-size: 12px;
+          position: absolute;
+          top: 0;
+          font-size: 18px;
+        }
+        a {
+          text-decoration: none;
+          color: #106ff3;
+        }
+      }
+    }
+  }
+  //   Я тут только начал делать, не ебите меня пажалусто
+  //   &-contact {
+  //     margin-top: 100px;
+  //     &__inner {
+  //       display: flex;
+  //       justify-content: center;
+  //     }
+  //     &__form {
+  //       form {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+}
