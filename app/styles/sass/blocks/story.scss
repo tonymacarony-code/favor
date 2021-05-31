@@ -1,0 +1,41 @@
+.story {
+  margin-top: 139px;
+  h2 {
+    text-align: center;
+  }
+  a {
+    text-align: center;
+  }
+  &__group {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    &:first-child {
+      margin-top: 61px;
+    }
+    img {
+      border-radius: 6px;
+      width: 100%;
+    }
+    h2 {
+      text-align: left;
+    }
+    &-content {
+      p {
+        max-width: 488px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  &__link {
+    text-align: center;
+    margin-top: 56px;
+  }
+  .left-side {
+    margin-right: 72px;
+  }
+  .right-side {
+    margin-left: 72px;
+  }
+}

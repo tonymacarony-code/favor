@@ -18,4 +18,43 @@
       margin-bottom: 40px;
     }
   }
+  &__features {
+    margin-top: 123px;
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 67px;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card {
+    &-image {
+      text-align: center;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #373f41;
+      justify-content: center;
+      margin-top: 11px;
+      margin-bottom: 0;
+      line-height: 24px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      max-width: 405px;
+      font-size: 14px;
+      color: #373f41;
+      font-weight: 400;
+      line-height: 20px;
+      max-height: 42px;
+    }
+  }
+}
+.second-row {
+  margin-top: 73px;
 }

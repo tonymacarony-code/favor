@@ -17,6 +17,7 @@
           color: #000;
           font-weight: 600;
           transition: all 0.3s;
+          font-size: 15px;
           &:hover {
             color: $btn;
           }
@@ -35,6 +36,7 @@
     color: #000;
     font-weight: 600;
     transition: all 0.3s;
+    font-size: 14px;
     &:hover {
       background-color: #ffdb7e;
     }
