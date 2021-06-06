@@ -1,0 +1,77 @@
+.footer {
+  background-color: #2f183d;
+  color: #fff;
+  h4 {
+    margin-bottom: 20px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 92px;
+  }
+  &__logo {
+    img {
+      width: 115px;
+      height: 104px;
+    }
+    p {
+      margin-top: 33px;
+    }
+  }
+  &__menu {
+    ul {
+      padding-left: 0;
+      li {
+        list-style: none;
+        margin-top: 18px;
+      }
+    }
+  }
+  &__contacts {
+    &-address,
+    &-mail {
+      position: relative;
+      margin-top: 14px;
+      margin-left: 12px;
+      &::before {
+        position: absolute;
+        font-family: "icomoon";
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+    &-address {
+      content: "\f041";
+    }
+    &-mail {
+      content: "\e902";
+    }
+  }
+  &__social {
+    a {
+      margin-right: 20px;
+      font-size: 25px;
+      transition: all 0.3s;
+      &.icon-youtube {
+        &:hover {
+          color: #c4302b;
+        }
+      }
+      &.icon-instagram {
+        &:hover {
+          color: #d6249f;
+        }
+      }
+      &.icon-facebook {
+        &:hover {
+          color: #4267b2;
+        }
+      }
+    }
+  }
+}

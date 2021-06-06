@@ -5,7 +5,7 @@
     <title>ТОВ "ФІРМА "ФАВОР"</title>
     <meta name="description" content="Startup HTML template OptimizedHTML 5" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon 16x16.png" />
     <meta property="og:image" content="images/dist/preview.jpg" />
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -646,7 +646,7 @@
               <img src="images/partners/Epicentr.svg" alt="" />
             </div>
             <div class="main-partners__logo">
-              <img src="images/partners/АМА.svg" alt="" />
+              <img src="images/partners/AMA.svg" alt="" />
             </div>
           </div>
         </div>
@@ -788,22 +788,92 @@
               <p>Будемо раді відповісти на ваші запитання!</p>
             </div>
             <div class="main-contact__form">
-              <form action="" autocomplete="on">
-                <label class="name--row">Ім'я</label>
-                <input type="text" />
-                <label class="name--row">Телефон</label>
-                <input type="text" />
-                <label class="name">E-mail</label>
-                <input type="text" />
-                <label class="name">Повідомлення</label>
-                <input type="text" />
-                <button class="link">Надіслати</button>
+              <form method="POST" name="contactForm" autocomplete="on">
+                <div class="main-contact__form-row">
+                  <div class="main-contact__form-name">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Ім`я"
+                      />
+                    </div>
+                  </div>
+                  <div class="main-contact__form-number">
+                    <div class="form-group phonenumber">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        name="tel"
+                        placeholder="Телефон"
+                      />
+                    </div>
+                  </div>
+                  <div class="main-contact__form-email">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="main-contact__form-message">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        class="form-control"
+                        cols="30"
+                        rows="7"
+                        placeholder="Повідомлення"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="main-contact__form-submit">
+                    <div class="form-group">
+                      <input type="submit" value="Надіслати" class="link" />
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__columns">
+          <div class="footer__logo">
+            <a href=""> <img src="images/header__logo.png" alt="" /></a>
+            <p>Всі права захищені © Київ 2021 ТОВ "Фірма "Фавор".</p>
+          </div>
+          <div class="footer__menu">
+            <h4>Меню</h4>
+            <ul>
+              <li><a href="#">Головна</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Продукція</a></li>
+              <li><a href="#">Новини</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <h4>Контакти</h4>
+            <div class="footer__contacts-address">м. Київ, вул.Тулузи, 5</div>
+            <div class="footer__contacts-mail">favorAMA1993@gmail.com</div>
+          </div>
+          <div class="footer__social">
+            <h4>Слідкуйте за нами</h4>
+            <a class="icon-youtube" href="#"></a>
+            <a class="icon-instagram" href="#"></a>
+            <a class="icon-facebook" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>

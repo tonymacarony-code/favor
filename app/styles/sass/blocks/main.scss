@@ -224,17 +224,71 @@
       }
     }
   }
-  //   Я тут только начал делать, не ебите меня пажалусто
-  //   &-contact {
-  //     margin-top: 100px;
-  //     &__inner {
-  //       display: flex;
-  //       justify-content: center;
-  //     }
-  //     &__form {
-  //       form {
-  //         display: block;
-  //       }
-  //     }
-  //   }
+  &-contact {
+    margin-top: 100px;
+
+    &__inner {
+      display: flex;
+      margin: 0 45px;
+    }
+    &__text {
+      h2 {
+        margin: 0;
+      }
+      p {
+        margin-top: 12px;
+      }
+    }
+    &__form {
+      margin-left: 178px;
+      &-row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &-name,
+      &-number,
+      &-email {
+        flex: 0 0 50%;
+        max-width: 100%;
+        input {
+          padding-left: 16px;
+          width: 100%;
+          min-height: 44px;
+          background-color: #f3f3f4;
+          border: none;
+          border-radius: 8px;
+        }
+      }
+
+      &-email,
+      &-message {
+        flex: 0 0 100%;
+        max-width: 100%;
+        textarea {
+          padding-top: 13px;
+          padding-left: 16px;
+          width: 100%;
+          min-height: 200px;
+          background-color: #f3f3f4;
+          border: none;
+          border-radius: 8px;
+        }
+      }
+      &-submit {
+        margin-top: 32px;
+        margin-bottom: 96px;
+
+        input {
+          border: none;
+          cursor: pointer;
+        }
+      }
+      .form-group {
+        margin-bottom: 16px;
+        &.phonenumber {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
 }
