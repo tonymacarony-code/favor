@@ -26,26 +26,31 @@
               <img src="images/header__logo.png" alt="" />
             </a>
           </div>
+
           <nav class="header__menu">
-            <ul>
+            <ul class="header__list">
               <li>
-                <a href="#">Головна</a>
+                <a href="#" class="active">Головна</a>
               </li>
               <li>
-                <a href="#">Компанія</a>
+                <a href="#" class="">Компанія</a>
               </li>
               <li>
-                <a href="#">Продукція</a>
+                <a href="#" class="">Продукція</a>
               </li>
               <li>
-                <a href="#">Новини</a>
+                <a href="#" class="">Новини</a>
               </li>
               <li>
-                <a href="#">Контакти</a>
+                <a href="#" class="">Контакти</a>
               </li>
             </ul>
           </nav>
+
           <a class="header__link" href="#"> Замовити </a>
+          <div class="header__menu-burger">
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -54,7 +59,9 @@
         <div class="slider__wrapper">
           <div class="slider__items">
             <a class="slider__item" href="">
-              <img src="images/slide1.jpg" alt="" />
+              <div class="slider__item-image">
+                <img src="images/slide1.jpg" alt="" />
+              </div>
               <h1>Смачно куштувати - просто замовляти</h1>
               <p>
                 М’який сир, виготовлений за унікальним рецептом, здивує Ваших
@@ -62,7 +69,9 @@
               </p>
             </a>
             <a class="slider__item" href="">
-              <img src="images/slide2.jpg" alt="" />
+              <div class="slider__item-image">
+                <img src="images/slide2.jpg" alt="" />
+              </div>
               <h1>Намаж на скоринку смачну новинку!</h1>
               <p>
                 Неперевершений ніжний смак, з вираженим присмаком грибів,
@@ -70,7 +79,9 @@
               </p>
             </a>
             <a class="slider__item" href="">
-              <img src="images/slide1.jpg" alt="" />
+              <div class="slider__item-image">
+                <img src="images/slide1.jpg" alt="" />
+              </div>
               <h1>Круто куштувати - просто замовляти</h1>
               <p>
                 М’який сир, виготовлений за унікальним рецептом, здивує Ваших
@@ -78,7 +89,9 @@
               </p>
             </a>
             <a class="slider__item" href="">
-              <img src="images/slide2.jpg" alt="" />
+              <div class="slider__item-image">
+                <img src="images/slide2.jpg" alt="" />
+              </div>
               <h1>Намаж на скоринку смачну новинку!</h1>
               <p>
                 Неперевершений ніжний смак, з вираженим присмаком грибів,
@@ -86,7 +99,9 @@
               </p>
             </a>
             <a class="slider__item" href="">
-              <img src="images/slide1.jpg" alt="" />
+              <div class="slider__item-image">
+                <img src="images/slide1.jpg" alt="" />
+              </div>
               <h1>Круто куштувати - просто замовляти</h1>
               <p>
                 М’який сир, виготовлений за унікальним рецептом, здивує Ваших
@@ -669,7 +684,7 @@
                 <img src="images/story_1993.jpg" alt="" />
               </div>
             </div>
-            <div class="main-story__group">
+            <div class="main-story__group reverse">
               <div class="main-story__group-image">
                 <img src="images/story_2007.jpg" alt="" />
               </div>
@@ -700,7 +715,7 @@
                 <img src="images/story_2012.jpg" alt="" />
               </div>
             </div>
-            <div class="main-story__group">
+            <div class="main-story__group reverse">
               <div class="main-story__group-image">
                 <img src="images/story_2021.jpg" alt="" />
               </div>
@@ -878,5 +893,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/burger-menu.js"></script>
   </body>
 </html>

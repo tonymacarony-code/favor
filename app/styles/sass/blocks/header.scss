@@ -1,6 +1,9 @@
 .header {
   box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.08);
-
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -10,16 +13,32 @@
     ul {
       display: flex;
       list-style: none;
+      @media (max-width: 768px) {
+        display: block;
+        padding-left: 0;
+        margin: 0;
+      }
       li {
         margin-right: 28px;
+        @media (max-width: 768px) {
+          margin: 0;
+          padding: 20px 0;
+          border-bottom: 1px solid #515758;
+        }
         a {
           text-decoration: none;
           color: #000;
           font-weight: 600;
           transition: all 0.3s;
           font-size: 15px;
+          &.active {
+            color: #ffc733;
+          }
           &:hover {
             color: $btn;
+          }
+          @media (max-width: 768px) {
+            font-size: 18px;
           }
         }
         &:last-child {
@@ -27,7 +46,69 @@
         }
       }
     }
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 72px;
+      text-align: center;
+      left: 0;
+      background: rgb(245, 246, 246);
+      box-shadow: #ccc;
+      width: 100%;
+      box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+      left: -100%;
+      transition: all 0.4s ease;
+      z-index: 3;
+      &.open-menu {
+        left: 0;
+      }
+      &-burger {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: block;
+        span,
+        &::before,
+        &::after {
+          height: 3px;
+          width: 100%;
+          position: absolute;
+          background: #515758;
+          margin: 0 auto;
+        }
+        span {
+          top: 17px;
+        }
+        &::before,
+        &::after {
+          content: "";
+        }
+        &::after {
+          bottom: 5px;
+        }
+        &::before {
+          top: 5px;
+        }
+        &.open-menu {
+          span {
+            opacity: 0;
+            transition: 0.5s;
+          }
+          &::before {
+            transform: rotate(38deg);
+            top: 16px;
+            transition: 0.4s;
+          }
+          &::after {
+            transform: rotate(-38deg);
+            bottom: 16px;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
   }
+
   &__link {
     background-color: $btn;
     padding: 12px 17px;

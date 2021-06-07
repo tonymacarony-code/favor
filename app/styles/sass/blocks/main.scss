@@ -5,6 +5,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 768px) {
+        display: block;
+        text-align: center;
+      }
+    }
+    &__image {
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 768px) {
+          width: 75%;
+        }
+      }
     }
     &__content {
       margin-right: 43px;
@@ -17,6 +31,9 @@
         line-height: 22px;
         margin-top: 15px;
         margin-bottom: 40px;
+        @media (max-width: 768px) {
+          max-width: none;
+        }
       }
     }
     &__features {
@@ -30,6 +47,10 @@
     &__cards {
       display: flex;
       flex-wrap: wrap;
+      @media (max-width: 960px) {
+        align-items: center;
+        justify-content: space-around;
+      }
     }
     &__card {
       &-image {
@@ -71,11 +92,20 @@
       margin-top: 108px;
       display: flex;
       justify-content: center;
+      @media (max-width: 960px) {
+        display: block;
+        text-align: center;
+        margin-top: 72px;
+      }
     }
     &__card {
       margin-right: 48px;
+      transition: all 0.3s;
       &:last-child {
         margin-right: 0px;
+      }
+      &:hover {
+        transform: scale(1.1);
       }
       h5 {
         margin-top: 20px;
@@ -83,11 +113,20 @@
         text-decoration: none;
         color: #000;
         font-size: 18px;
+        @media (max-width: 960px) {
+          margin-bottom: 45px;
+        }
+      }
+      @media (max-width: 960px) {
+        margin-right: 0;
       }
     }
   }
   &-partners {
     margin-top: 130px;
+    @media (max-width: 960px) {
+      margin-top: 100px;
+    }
     h2 {
       text-align: center;
     }
@@ -96,10 +135,22 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      @media (max-width: 960px) {
+        margin-top: 36px;
+        flex-wrap: wrap;
+      }
+    }
+    &__logo {
+      @media (max-width: 960px) {
+        margin-bottom: 32px;
+      }
     }
   }
   &-story {
     margin-top: 139px;
+    @media (max-width: 960px) {
+      margin-top: 100px;
+    }
     h2 {
       text-align: center;
     }
@@ -110,21 +161,38 @@
       margin-bottom: 80px;
       display: flex;
       justify-content: center;
+      @media (max-width: 768px) {
+        text-align: center;
+        flex-direction: column-reverse;
+        &.reverse {
+          flex-direction: column;
+        }
+      }
       &:first-child {
         margin-top: 61px;
       }
       img {
         border-radius: 6px;
         width: 100%;
+        @media (max-width: 768px) {
+          width: 75%;
+        }
       }
       h2 {
         text-align: left;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
       }
       &-content {
         p {
           max-width: 488px;
           font-size: 16px;
           line-height: 22px;
+          @media (max-width: 768px) {
+            text-align: center;
+            max-width: none;
+          }
         }
       }
     }
@@ -138,6 +206,12 @@
     .right-side {
       margin-left: 72px;
     }
+    @media (max-width: 768px) {
+      .left-side,
+      .right-side {
+        margin: 0;
+      }
+    }
   }
   &-news {
     h2 {
@@ -149,12 +223,21 @@
       display: flex;
       justify-content: center;
       margin-bottom: 71px;
+      @media (max-width: 768px) {
+        justify-content: space-around;
+      }
     }
     &__link {
       text-align: center;
     }
     &__item {
       margin-right: 87px;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        &:last-child {
+          display: none;
+        }
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -172,7 +255,7 @@
         color: #106ff3;
         position: relative;
         &::before {
-          content: "\f073";
+          content: "\e900";
           position: absolute;
           font-family: "icomoon";
           font-size: 12px;
@@ -201,6 +284,9 @@
         line-height: 22px;
         font-weight: 400;
         max-height: 109px;
+        @media (max-width: 960px) {
+          margin-bottom: 36px;
+        }
       }
       &-read {
         position: relative;
@@ -209,10 +295,10 @@
           text-decoration: underline;
         }
         &::after {
-          content: "\e902";
+          content: "\e907";
           font-family: "icomoon";
           color: #106ff3;
-          font-size: 12px;
+          font-size: 14px;
           position: absolute;
           top: 0;
           font-size: 18px;
@@ -230,8 +316,16 @@
     &__inner {
       display: flex;
       margin: 0 45px;
+      @media (max-width: 768px) {
+        display: block;
+      }
     }
     &__text {
+      white-space: nowrap;
+      @media (max-width: 960px) {
+        white-space: pre-wrap;
+      }
+
       h2 {
         margin: 0;
       }
@@ -241,6 +335,13 @@
     }
     &__form {
       margin-left: 178px;
+      @media (max-width: 960px) {
+        margin-left: 100px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+
       &-row {
         display: flex;
         flex-wrap: wrap;
