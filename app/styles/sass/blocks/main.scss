@@ -47,12 +47,18 @@
     &__cards {
       display: flex;
       flex-wrap: wrap;
+      @media (max-width: 1370px) {
+        justify-content: space-around;
+      }
       @media (max-width: 960px) {
         align-items: center;
         justify-content: space-around;
       }
     }
     &__card {
+      @media (max-width: 1370px) {
+        margin-bottom: 72px;
+      }
       &-image {
         text-align: center;
       }
@@ -78,6 +84,9 @@
     }
     .second-row {
       margin-top: 73px;
+      @media (max-width: 1370px) {
+        margin-top: 0;
+      }
     }
   }
   &-our_products {
@@ -184,6 +193,7 @@
           text-align: center;
         }
       }
+
       &-content {
         p {
           max-width: 488px;

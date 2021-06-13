@@ -4,6 +4,11 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  @media (max-width: 768px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
 }
 .container {
   max-width: 1280px;
