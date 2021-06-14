@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Adigiana Extreme";
+  src: url("../fonts/Adigiana\ Extreme.woff2") format("woff2"),
+    url("../fonts/Adigiana\ Extreme.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?6gcd3x");
   src: url("../fonts/icomoon.eot?6gcd3x#iefix") format("embedded-opentype"),

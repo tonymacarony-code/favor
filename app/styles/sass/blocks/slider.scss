@@ -8,6 +8,9 @@
     width: 100%;
     max-height: 579px;
     height: 100%;
+    @media (max-width: 425px) {
+      max-height: 217px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -44,6 +47,10 @@
       @media (max-width: 960px) {
         font-size: 80px;
         max-width: 650px;
+      }
+      @media (max-width: 425px) {
+        font-size: 56px;
+        line-height: 64px;
       }
     }
     p {

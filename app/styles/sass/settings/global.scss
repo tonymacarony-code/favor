@@ -20,6 +20,9 @@ body {
 h2 {
   font-size: 48px;
   font-weight: 700;
+  @media (max-width: 425px) {
+    font-size: 36px;
+  }
 }
 .link {
   background-color: #ffc733;
