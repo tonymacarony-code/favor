@@ -23,4 +23,17 @@
       }
     }
   }
+  &--product-page {
+    margin-top: 88px;
+    ul {
+      padding: 0;
+    }
+  }
+  &--news_single {
+    margin-top: 88px;
+    align-self: flex-start;
+    ul {
+      padding: 0;
+    }
+  }
 }

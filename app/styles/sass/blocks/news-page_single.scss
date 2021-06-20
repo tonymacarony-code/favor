@@ -1,0 +1,40 @@
+.news_single {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 842px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 61px;
+    align-items: flex-start;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    &:last-child {
+      margin-bottom: 108px;
+    }
+  }
+  &__date {
+    margin-top: 15px;
+    align-self: flex-start;
+    margin-bottom: 23px;
+  }
+  &__image {
+    max-width: 842px;
+    img {
+      width: 100%;
+    }
+    &-main {
+      min-width: 1062px;
+      max-width: 1062px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

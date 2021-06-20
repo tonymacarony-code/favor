@@ -51,12 +51,12 @@
     }
 
     &::before {
-      content: "\e903";
+      content: "\e907";
       left: 400px;
       cursor: pointer;
     }
     &::after {
-      content: "\e907";
+      content: "\e903";
       right: 400px;
       cursor: pointer;
     }
