@@ -68,149 +68,192 @@
         </div>
         <h2>Наша продукція</h2>
         <div class="products__tabs" id="products__tabs">
-          <button class="products__tabs_btn link link--products active-tab">
+          <button
+            class="products__tabs_btn active link link--products"
+            data-filter=".all"
+            type="button"
+          >
             Вся продукція
           </button>
           <button
             class="products__tabs_btn link link--products"
-            data-id="traditional"
+            data-filter=".traditional"
+            type="button"
           >
             Традиційна
           </button>
           <button
             class="products__tabs_btn link link--products"
-            data-id="desserts"
+            data-filter=".desserts"
+            type="button"
           >
             Десерти
           </button>
           <button
             class="products__tabs_btn link link--products"
-            data-id="exclusive"
+            data-filter=".exclusive"
+            type="button"
           >
             Ексклюзив
           </button>
           <button
             class="products__tabs_btn link link--products"
-            data-id="other"
+            data-filter=".other"
+            type="button"
           >
             Інші
           </button>
         </div>
-        <div class="products__items">
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
-            </div>
-            <h4>Молоко питне пастеризоване 2,5%</h4>
-            <p>1 кг</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/молоко_3-2_пакет.jpg" alt="" />
-            </div>
-            <h4>Молоко питне пастеризоване 3,2%</h4>
-            <p>1 кг.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/молоко_витамин_2-5_пакет.jpg" alt="" />
-            </div>
-            <h4>Молоко питне пастеризоване вітамінізоване 2,5%</h4>
-            <p>1 кг.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/молоко_витамин_3-2_пакет.jpg" alt="" />
-            </div>
-            <h4>Молоко питне пастеризоване вітамінізоване 3,2%</h4>
-            <p>1 кг.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="exclusive">
-            <div class="product__item-image">
-              <img src="images/products/нарине_банан.jpg" alt="" />
-            </div>
-            <h4>Наріне</h4>
-            <p>125 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/ряжанка_банка.jpg" alt="" />
-            </div>
-            <h4>Ряжанка 4%</h4>
-            <p>350 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/сир_5_пачка.jpg" alt="" />
-            </div>
-            <h4>Сир кисломолочний 5%</h4>
-            <p>200 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/сир_9_пачка.jpg" alt="" />
-            </div>
-            <h4>Сир кисломолочний 9%</h4>
-            <p>200 гр.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/сир_блистер.jpg" alt="" />
-            </div>
-            <h4>Сир кисломолочний 18%</h4>
-            <p>350 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="exclusive">
-            <div class="product__item-image">
-              <img src="images/products/сир_фет-ама-1.jpg" alt="" />
-            </div>
-            <h4>Сир м'який, збагачений молочним білком ФетАМА 18%</h4>
-            <p>250 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/Сметана_15_пакет.jpg" alt="" />
-            </div>
-            <h4>Сметана 15%</h4>
-            <p>500 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/Сметана_20_пакет.jpg" alt="" />
-            </div>
-            <h4>Сметана 20%</h4>
-            <p>500 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="traditional">
-            <div class="product__item-image">
-              <img src="images/products/сметана_банка.jpg" alt="" />
-            </div>
-            <h4>Сметана 20%</h4>
-            <p>350 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="exclusive">
-            <div class="product__item-image">
-              <img src="images/products/до_сниданку_4_4.jpg" alt="" />
-            </div>
-            <h4>Продукт кисломолочний "До сніданку" 36% жиру</h4>
-            <p>150 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="desserts">
-            <div class="product__item-image">
-              <img src="images/products/йогурт_3.jpg" alt="" />
-            </div>
-            <h4>Йогурт вершковий 10%</h4>
-            <p>150 г.</p>
-          </a>
-          <a href="#" class="products__item active-tab" id="exclusive">
-            <div class="product__item-image">
-              <img src="images/products/кефир_омега_3_1.jpg" alt="" />
-            </div>
-            <h4>Кефір Омега 2,5%</h4>
-            <p>125 г.</p>
-          </a>
+        <div class="products__items" id="MixItUp1">
+          <div class="products__item mix all traditional" data-order="1">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all desserts" data-order="2">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/йогурт_полуниця.jpg" alt="" />
+              </div>
+              <h4>Йогурт вершковий</h4>
+              <p>150 г.</p>
+            </a>
+          </div>
+          <div class="products__item mix all exclusive" data-order="3">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/иолактон_большой.jpg" alt="" />
+              </div>
+              <h4>"Іолактон" зі стевією 2,5%</h4>
+              <p>450 г.</p>
+            </a>
+          </div>
+          <div class="products__item mix all other" data-order="4">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all exclusive" data-order="3">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/до_сн_гриби.jpg" alt="" />
+              </div>
+              <h4>Продукт кисломолочний "До сніданку" 36% жиру</h4>
+              <p>150 г.</p>
+            </a>
+          </div>
+          <div class="products__item mix all traditional" data-order="1">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/кефир_1-0_пакет.jpg" alt="" />
+              </div>
+              <h4>Кефір 1%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all desserts" data-order="2">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/до_сн_шоколад.jpg" alt="" />
+              </div>
+              <h4>Продукт кисломолочний "До сніданку" 36% жиру</h4>
+              <p>150 г.</p>
+            </a>
+          </div>
+          <div class="products__item mix all exclusive" data-order="3">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/нарине_банан.jpg" alt="" />
+              </div>
+              <h4>
+                Продукт кисломолочний «Наріне» 2,5 % жиру з плодово-ягідним
+                наповнювачем
+              </h4>
+              <p>125 г.</p>
+            </a>
+          </div>
+          <div class="products__item mix all other" data-order="4">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/масло_2_упаковка.jpg" alt="" />
+              </div>
+              <h4>Масло солодковершкове 82.5%</h4>
+              <p>-</p>
+            </a>
+          </div>
+          <div class="products__item mix all exclusive" data-order="3">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/сир_фет-ама-1.jpg" alt="" />
+              </div>
+              <h4>Сир м'який, збагачений молочним білком «ФетАМА»</h4>
+              <p>250 г.</p>
+            </a>
+          </div>
+          <div class="products__item mix all traditional" data-order="1">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_3-2_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 3,2%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all desserts" data-order="2">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all exclusive" data-order="3">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all other" data-order="4">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all other" data-order="4">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
+          <div class="products__item mix all other" data-order="4">
+            <a href="#">
+              <div class="product__item-image">
+                <img src="images/products/молоко_2-5_пакет.jpg" alt="" />
+              </div>
+              <h4>Молоко питне пастеризоване 2,5%</h4>
+              <p>1 кг</p>
+            </a>
+          </div>
         </div>
-        <div class="products__pagination">
+        <div class="products__pagination" id="products__pagination">
           <a
             class="products__pagination-link link link--pagination active"
             href="#"
