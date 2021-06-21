@@ -29,11 +29,24 @@
       padding: 0;
     }
   }
-  &--news_single {
+  &--company {
+    margin-left: 219px;
+  }
+  &--news_single,
+  &--contacts-page,
+  &--product-page,
+  &--products {
     margin-top: 88px;
     align-self: flex-start;
     ul {
       padding: 0;
+    }
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      ul {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
     }
   }
 }

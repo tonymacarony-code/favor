@@ -5,25 +5,37 @@
     align-items: center;
     margin-top: 72px;
   }
+
   &__card {
     display: flex;
     margin-bottom: 146px;
+    @media (max-width: 768px) {
+      display: block;
+      margin-bottom: 75px;
+    }
+
     &-image {
-      width: 100%;
       max-width: 438px;
-      max-height: 246px;
+      @media (max-width: 768px) {
+        max-width: none;
+      }
       img {
         width: 100%;
-        max-width: 438px;
-        max-height: 246px;
       }
     }
     &-content {
       margin-left: 32px;
       max-width: 515px;
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 25px;
+      }
       h3 {
         margin: 0;
         font-size: 22px;
+        @media (max-width: 425px) {
+          line-height: 28px;
+        }
         a {
           text-decoration: none;
           color: #000;
@@ -36,16 +48,26 @@
         margin-top: 28px;
         line-height: 22px;
         font-size: 16px;
+        @media (max-width: 425px) {
+          line-height: 26px;
+        }
       }
       &_row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 45px;
+        @media (max-width: 425px) {
+          display: block;
+        }
         &-date {
           color: #95a1bb;
           position: relative;
           margin-left: 25px;
+          @media (max-width: 425px) {
+            margin-bottom: 35px;
+          }
+
           &::before {
             content: "\e900";
             font-family: "icomoon";
@@ -62,6 +84,14 @@
           color: #fff;
           font-size: 14px;
           transition: all 0.3s;
+          @media (max-width: 425px) {
+            display: flex;
+            justify-content: center;
+            padding: 17px;
+          }
+          @media (max-width: 376px) {
+            padding: 17px;
+          }
           &:hover {
             border: 1px solid #6e38f7;
             background-color: #fff;

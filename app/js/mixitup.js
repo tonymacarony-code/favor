@@ -1,12 +1,13 @@
 import mixitup from "mixitup";
 
 var containerEl = document.getElementById("MixItUp1");
-
-var mixer = mixitup(containerEl, {
-  selectors: {
-    target: ".products__item",
-  },
-});
+if (containerEl) {
+  var mixer = mixitup(containerEl, {
+    selectors: {
+      target: ".products__item",
+    },
+  });
+}
 
 // Get the container element
 var btnContainer = document.getElementById("products__tabs");

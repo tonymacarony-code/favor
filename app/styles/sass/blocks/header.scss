@@ -60,6 +60,11 @@
     }
   }
   &__menu {
+    &-link {
+      &.active {
+        color: #ffc733;
+      }
+    }
     @media (max-width: 768px) {
       position: absolute;
       top: -500%;
@@ -93,9 +98,6 @@
           transition: all 0.3s;
           font-size: 15px;
 
-          &.active {
-            color: #ffc733;
-          }
           &:hover {
             color: $btn;
           }
@@ -109,8 +111,9 @@
 
   &__link {
     @media (max-width: 768px) {
-      margin-right: 42px;
+      margin-right: 25px;
       margin-left: auto;
+      padding: 11px 16px;
     }
     background-color: $btn;
     padding: 12px 17px;

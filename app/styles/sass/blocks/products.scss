@@ -41,6 +41,9 @@
     justify-content: center;
     margin: 114px 0 88px 0;
     position: relative;
+    &--news {
+      display: none;
+    }
     &::before,
     &::after {
       content: "";
