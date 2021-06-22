@@ -5,7 +5,32 @@
     align-items: center;
     margin-top: 72px;
   }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin: 114px 0 88px 0;
+    position: relative;
 
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      font-family: "icomoon";
+      color: #95a1bb;
+      font-size: 25px;
+    }
+
+    &::before {
+      content: "\e907";
+      left: 400px;
+      cursor: pointer;
+    }
+    &::after {
+      content: "\e903";
+      right: 400px;
+      cursor: pointer;
+    }
+  }
   &__card {
     display: flex;
     margin-bottom: 146px;

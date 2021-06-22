@@ -41,9 +41,7 @@
     justify-content: center;
     margin: 114px 0 88px 0;
     position: relative;
-    &--news {
-      display: none;
-    }
+
     &::before,
     &::after {
       content: "";
@@ -54,12 +52,12 @@
     }
 
     &::before {
-      content: "\e907";
+      content: "\e903";
       left: 400px;
       cursor: pointer;
     }
     &::after {
-      content: "\e903";
+      content: "\e907";
       right: 400px;
       cursor: pointer;
     }
