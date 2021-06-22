@@ -1,7 +1,12 @@
 * {
   box-sizing: border-box;
 }
-
+body,
+html {
+  @supports (display: grid) {
+    display: block;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   overflow-y: scroll;
