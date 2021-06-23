@@ -55,6 +55,8 @@ body {
       font-weight: 300;
       width: 100%;
       max-width: 1366px;
+      height: 100vh;
+      overflow: scroll;
       .modal-svg {
         position: absolute;
         top: 0;
