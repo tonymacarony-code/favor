@@ -84,6 +84,7 @@ function buildcopy() {
 		'app/images/**/*.*',
 		'!app/images/src/**/*',
 		'app/fonts/**/*',
+		'app/media/**/*',
 		'app/slick/**/*'
 	], { base: 'app/' })
 	.pipe(dest('dist'))
