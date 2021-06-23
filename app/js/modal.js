@@ -40,6 +40,3 @@ $(document).ready(function () {
     },
   });
 });
-
-var scrolled = $(window).scrollTop() + 60;
-$("modal-container").css("top", scrolled);
