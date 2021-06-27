@@ -11,7 +11,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".company__content-rule_slider").slick({
     slidesToShow: 1,
-    dots: false,
+    dots: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
