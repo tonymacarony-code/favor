@@ -81,33 +81,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 45px;
+        margin-top: 30px;
         @media (max-width: 425px) {
           display: block;
         }
         &-date {
-          color: #95a1bb;
-          position: relative;
-          margin-left: 25px;
+          color: #67228f;
+          font-weight: 500;
           @media (max-width: 425px) {
             margin-bottom: 35px;
-          }
-
-          &::before {
-            content: "\e900";
-            font-family: "icomoon";
-            position: absolute;
-            left: -25px;
-            font-size: 14px;
           }
         }
         a {
           text-decoration: none;
-          padding: 9px 12px;
-          background-color: #6e38f7;
+          padding: 17px 36px;
+          background-color: #67228f;
           border-radius: 38px;
           color: #fff;
-          font-size: 14px;
+          font-size: 15px;
           transition: all 0.3s;
           @media (max-width: 425px) {
             display: flex;
