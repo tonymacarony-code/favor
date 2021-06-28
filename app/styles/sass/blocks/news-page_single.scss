@@ -17,7 +17,7 @@
     @media (max-width: 425px) {
       font-size: 21px;
       line-height: 28px;
-      margin-top: 0;
+      margin-top: 25px;
       margin-bottom: 0;
     }
     @media (max-width: 320px) {
@@ -50,14 +50,16 @@
   }
   &__image {
     max-width: 842px;
-
     img {
       width: 100%;
     }
     &-main {
       max-width: 1062px;
-      @media (max-width: 768px) {
-        max-width: 768px;
+      img {
+        width: 100%;
+        @media (max-width: 768px) {
+          max-width: 768px;
+        }
       }
     }
   }

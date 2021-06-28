@@ -1,13 +1,16 @@
 .main {
   &-aboutus {
     margin-top: 112px;
+    @media (max-width: 426px) {
+      margin-top: 64px;
+    }
     &__inner {
       display: flex;
       justify-content: center;
       align-items: center;
       @media (max-width: 768px) {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
       }
     }
     &__image {
@@ -19,6 +22,10 @@
           width: 75%;
           margin-top: 50px;
         }
+        @media (max-width: 426px) {
+          width: 100%;
+          margin-top: 0;
+        }
       }
     }
     &__content {
@@ -28,6 +35,11 @@
       margin-right: 43px;
       h2 {
         margin: 0;
+        @media (max-width: 426px) {
+          margin-top: 25px;
+          margin-bottom: 12px;
+          font-size: 32px;
+        }
       }
       p {
         max-width: 395px;
@@ -38,14 +50,29 @@
         @media (max-width: 768px) {
           max-width: none;
         }
+        @media (max-width: 426px) {
+          line-height: 26px;
+        }
+      }
+      a {
+        @media (max-width: 426px) {
+          width: 100%;
+          margin: auto 0;
+        }
       }
     }
     &__features {
       margin-top: 123px;
+      @media (max-width: 426px) {
+        margin-top: 73px;
+      }
       h2 {
         text-align: center;
         margin-top: 0;
         margin-bottom: 67px;
+        @media (max-width: 426px) {
+          font-size: 32px;
+        }
       }
     }
     &__cards {
@@ -62,7 +89,11 @@
     &__card {
       @media (max-width: 1370px) {
         margin-bottom: 72px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
+
       &-image {
         text-align: center;
       }
@@ -75,6 +106,10 @@
         margin-bottom: 0;
         line-height: 24px;
         text-align: center;
+        @media (max-width: 426px) {
+          font-size: 22px;
+          line-height: 32px;
+        }
       }
       p {
         text-align: center;
@@ -84,6 +119,9 @@
         font-weight: 400;
         line-height: 20px;
         max-height: 42px;
+        @media (max-width: 426px) {
+          line-height: 26px;
+        }
       }
     }
     .second-row {
@@ -97,6 +135,10 @@
     h2 {
       text-align: center;
       margin-top: 139px;
+      @media (max-width: 426px) {
+        margin-top: 98px;
+        font-size: 32px;
+      }
     }
     a {
       text-decoration: none;
@@ -109,6 +151,9 @@
         display: block;
         text-align: center;
         margin-top: 72px;
+      }
+      @media (max-width: 426px) {
+        margin-top: 39px;
       }
     }
     &__card {
@@ -123,6 +168,9 @@
       img {
         width: 100%;
         max-width: 300px;
+        @media (max-width: 426px) {
+          max-width: none;
+        }
       }
       h5 {
         margin-top: 20px;
@@ -132,6 +180,9 @@
         font-size: 18px;
         @media (max-width: 960px) {
           margin-bottom: 45px;
+        }
+        @media (max-width: 426px) {
+          font-size: 22px;
         }
       }
       @media (max-width: 960px) {
@@ -146,6 +197,9 @@
     }
     h2 {
       text-align: center;
+      @media (max-width: 426px) {
+        font-size: 32px;
+      }
     }
     &__row {
       margin-top: 80px;
@@ -156,15 +210,29 @@
         margin-top: 36px;
         flex-wrap: wrap;
       }
+      @media (max-width: 426px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-top: 63px;
+      }
     }
     &__logo {
       @media (max-width: 960px) {
         margin-bottom: 32px;
       }
+      @media (max-width: 426px) {
+        margin-bottom: 72px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
   &-story {
     margin-top: 139px;
+    @media (max-width: 426px) {
+      margin-top: 110px;
+    }
     &--company_page {
       h2 {
         display: flex;
@@ -202,6 +270,9 @@
     }
     h2 {
       text-align: center;
+      @media (max-width: 426px) {
+        font-size: 32px;
+      }
     }
     a {
       text-align: center;
@@ -217,6 +288,9 @@
           flex-direction: column;
         }
       }
+      @media (max-width: 426px) {
+        margin-bottom: 53px;
+      }
       &:first-child {
         margin-top: 61px;
       }
@@ -227,11 +301,19 @@
         @media (max-width: 768px) {
           width: 75%;
         }
+        @media (max-width: 426px) {
+          width: 100%;
+        }
       }
       h2 {
         text-align: left;
         @media (max-width: 768px) {
           text-align: center;
+        }
+        @media (max-width: 426px) {
+          text-align: left;
+          margin-bottom: 9px;
+          margin-top: 25px;
         }
       }
 
@@ -243,6 +325,10 @@
           @media (max-width: 768px) {
             text-align: center;
             max-width: none;
+          }
+          @media (max-width: 426px) {
+            text-align: left;
+            margin-top: 0;
           }
         }
       }
@@ -302,17 +388,8 @@
         margin-top: 23px;
         font-size: 12px;
         margin-bottom: 10px;
-        margin-left: 20px;
-        color: #106ff3;
-        position: relative;
-        &::before {
-          content: "\e900";
-          position: absolute;
-          font-family: "icomoon";
-          font-size: 12px;
-          left: -20px;
-          top: -1px;
-        }
+        font-weight: 500;
+        color: #67228f;
       }
       &-title {
         max-width: 295px;
@@ -348,7 +425,7 @@
         &::after {
           content: "\e907";
           font-family: "icomoon";
-          color: #106ff3;
+          color: #67228f;
           font-size: 14px;
           position: absolute;
           top: 0;
@@ -356,7 +433,7 @@
         }
         a {
           text-decoration: none;
-          color: #106ff3;
+          color: #67228f;
         }
       }
     }

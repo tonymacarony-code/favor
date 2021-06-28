@@ -1,11 +1,30 @@
 .products {
+  h2 {
+    @media (max-width: 691px) {
+      margin-top: 69px;
+      font-size: 32px;
+    }
+    @media (max-width: 320px) {
+      margin-top: 50px;
+    }
+  }
   &__items {
     display: flex;
     flex-wrap: wrap;
     margin-top: 88px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
     a {
       text-decoration: none;
       color: #000;
+    }
+  }
+  &__tabs {
+    @media (max-width: 768px) {
+      display: flex;
+      overflow: auto;
     }
   }
   &__item {
@@ -14,6 +33,12 @@
     transition: all 0.3s;
     margin-right: 15px;
     margin-bottom: 30px;
+    @media (max-width: 1370px) {
+      justify-content: center;
+    }
+    @media (max-width: 691px) {
+      margin-right: 0;
+    }
     &:hover {
       transform: scale(1.1);
       box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
@@ -34,32 +59,14 @@
       width: 100%;
       max-width: 296px;
       min-height: 297px;
+      @media (max-width: 320px) {
+        min-height: 286px;
+      }
     }
   }
   &__pagination {
     display: flex;
     justify-content: center;
     margin: 114px 0 88px 0;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      font-family: "icomoon";
-      color: #95a1bb;
-      font-size: 25px;
-    }
-
-    &::before {
-      content: "\e903";
-      left: 400px;
-      cursor: pointer;
-    }
-    &::after {
-      content: "\e907";
-      right: 400px;
-      cursor: pointer;
-    }
   }
 }

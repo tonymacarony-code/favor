@@ -8,9 +8,7 @@
     width: 100%;
     max-height: 579px;
     height: 100%;
-    @media (max-width: 425px) {
-      max-height: 217px;
-    }
+
     &::after {
       content: "";
       position: absolute;
@@ -27,8 +25,13 @@
     }
     &-image {
       max-width: 100%;
+      @media (max-width: 425px) {
+        max-height: 375px;
+      }
       img {
         width: 100%;
+        @media (max-width: 768px) {
+        }
       }
       height: 100%;
     }
@@ -52,8 +55,9 @@
         max-width: 650px;
       }
       @media (max-width: 425px) {
-        font-size: 56px;
-        line-height: 64px;
+        font-size: 32px;
+        line-height: 40px;
+        margin-left: 16px;
       }
     }
     p {
@@ -65,6 +69,12 @@
       @media (max-width: 960px) {
         font-size: 16px;
         max-width: 500px;
+      }
+      @media (max-width: 425px) {
+        margin-left: 16px;
+        font-size: 14px;
+        line-height: 28px;
+        top: 215px;
       }
     }
   }

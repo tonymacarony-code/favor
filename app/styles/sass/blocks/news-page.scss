@@ -1,41 +1,31 @@
 .news-page {
+  h2 {
+    @media (max-width: 426px) {
+      margin-top: 28px;
+      margin-bottom: 0;
+      font-size: 32px;
+    }
+  }
   &__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 72px;
+    @media (max-width: 426px) {
+      margin-top: 47px;
+    }
   }
   &__pagination {
     display: flex;
     justify-content: center;
     margin: 114px 0 88px 0;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      font-family: "icomoon";
-      color: #95a1bb;
-      font-size: 25px;
-    }
-
-    &::before {
-      content: "\e907";
-      left: 400px;
-      cursor: pointer;
-    }
-    &::after {
-      content: "\e903";
-      right: 400px;
-      cursor: pointer;
-    }
   }
   &__card {
     display: flex;
     margin-bottom: 146px;
     @media (max-width: 768px) {
-      display: block;
+      flex-direction: column;
+      display: flex;
       margin-bottom: 75px;
     }
 
@@ -51,15 +41,26 @@
     &-content {
       margin-left: 32px;
       max-width: 515px;
+      display: block;
       @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
         margin-left: 0;
-        margin-top: 25px;
+        margin-top: 23px;
+      }
+      @media (max-width: 768px) {
+        &_group {
+          margin-top: 9px;
+          display: flex;
+          flex-direction: column;
+        }
       }
       h3 {
         margin: 0;
         font-size: 22px;
         @media (max-width: 425px) {
           line-height: 28px;
+          font-size: 18px;
         }
         a {
           text-decoration: none;
@@ -75,6 +76,7 @@
         font-size: 16px;
         @media (max-width: 425px) {
           line-height: 26px;
+          margin-top: 9px;
         }
       }
       &_row {
@@ -82,15 +84,16 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 30px;
+
         @media (max-width: 425px) {
           display: block;
+        }
+        @media (max-width: 768px) {
+          margin-top: 0;
         }
         &-date {
           color: #67228f;
           font-weight: 500;
-          @media (max-width: 425px) {
-            margin-bottom: 35px;
-          }
         }
         a {
           text-decoration: none;
@@ -100,14 +103,10 @@
           color: #fff;
           font-size: 15px;
           transition: all 0.3s;
-          @media (max-width: 425px) {
-            display: flex;
-            justify-content: center;
-            padding: 17px;
+          @media (max-width: 768px) {
+            display: none;
           }
-          @media (max-width: 376px) {
-            padding: 17px;
-          }
+
           &:hover {
             border: 1px solid #6e38f7;
             background-color: #fff;

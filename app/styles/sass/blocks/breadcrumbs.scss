@@ -35,11 +35,15 @@
   &--news_single,
   &--contacts-page,
   &--product-page,
-  &--products {
+  &--products,
+  &--news-page {
     margin-top: 88px;
     align-self: flex-start;
     ul {
       padding: 0;
+    }
+    @media (max-width: 426px) {
+      display: none;
     }
     @media (max-width: 768px) {
       margin-top: 20px;
