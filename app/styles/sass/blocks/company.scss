@@ -137,82 +137,74 @@
           opacity: 1;
         }
         &--0 {
-          background: linear-gradient(
-            90deg,
-            rgba(238, 174, 202, 1) 0%,
-            rgba(148, 187, 233, 1) 100%
+          background-image: linear-gradient(
+            to right bottom,
+            #fdf7e0,
+            #fdf0dc,
+            #fbe9d9,
+            #f8e3d7,
+            #f3ddd6
           );
         }
         &--1 {
-          background: #c0c0aa; /* fallback for old browsers */
-          background: -webkit-linear-gradient(
-            to right,
-            #1cefff,
-            #c0c0aa
-          ); /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(
-            to right,
-            #1cefff,
-            #c0c0aa
-          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: linear-gradient(
+            to right bottom,
+            #efffeb,
+            #dbfaf0,
+            #cef3f7,
+            #cde9fa,
+            #d5ddf6
+          );
         }
         &--2 {
-          background: #be93c5; /* fallback for old browsers */
-          background: -webkit-linear-gradient(
-            to right,
-            #7bc6cc,
-            #be93c5
-          ); /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(
-            to right,
-            #7bc6cc,
-            #be93c5
-          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: linear-gradient(
+            to bottom,
+            #f9fed4,
+            #ebf9ce,
+            #ddf4c8,
+            #ceefc4,
+            #beeac1
+          );
         }
         &--3 {
-          background: #ddd6f3; /* fallback for old browsers */
-          background: -webkit-linear-gradient(
-            to right,
-            #faaca8,
-            #ddd6f3
-          ); /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(
-            to right,
-            #faaca8,
-            #ddd6f3
-          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: linear-gradient(
+            to bottom,
+            #f5ebfe,
+            #eeefff,
+            #eaf2ff,
+            #e9f4fd,
+            #ebf6fa
+          );
         }
         &--4 {
-          background: #1c92d2; /* fallback for old browsers */
-          background: -webkit-linear-gradient(
-            to right,
-            #f2fcfe,
-            #1c92d2
-          ); /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(
-            to right,
-            #f2fcfe,
-            #1c92d2
-          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: linear-gradient(
+            to bottom,
+            #dec2fd,
+            #efc2ed,
+            #f6c4df,
+            #f7c9d5,
+            #f2cfd0
+          );
         }
         &--5 {
-          background: #d9a7c7; /* fallback for old browsers */
-          background: -webkit-linear-gradient(
-            to right,
-            #fffcdc,
-            #d9a7c7
-          ); /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(
-            to right,
-            #fffcdc,
-            #d9a7c7
-          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background-image: linear-gradient(
+            to right bottom,
+            #e5f8ff,
+            #d2eeff,
+            #c7e3ff,
+            #c4d5ff,
+            #cac5fd
+          );
         }
         &--6 {
-          background: #d0f4fa;
-          background: -webkit-linear-gradient(top, #d0f4fa, #e3a4ad);
-          background: -moz-linear-gradient(top, #d0f4fa, #e3a4ad);
-          background: linear-gradient(to bottom, #d0f4fa, #e3a4ad);
+          background-image: linear-gradient(
+            to bottom,
+            #f5ebfe,
+            #eeefff,
+            #eaf2ff,
+            #e9f4fd,
+            #ebf6fa
+          );
         }
       }
       &_item {

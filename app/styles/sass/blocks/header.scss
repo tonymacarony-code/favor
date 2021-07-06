@@ -11,6 +11,14 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__logo {
+    a {
+      img {
+        width: 80px;
+        height: 70px;
+      }
+    }
+  }
   &__burger {
     display: none;
     @media (max-width: 768px) {
@@ -62,7 +70,8 @@
   &__menu {
     &-link {
       &.active {
-        color: #ffc733;
+        color: #73319a;
+        border-bottom: 2px solid #73319a;
       }
     }
     @media (max-width: 768px) {
@@ -100,7 +109,7 @@
           font-size: 15px;
 
           &:hover {
-            color: $btn;
+            color: #73319a;
           }
         }
         &:last-child {

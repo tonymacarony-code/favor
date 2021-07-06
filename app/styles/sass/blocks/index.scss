@@ -13,6 +13,7 @@
         flex-direction: column-reverse;
       }
     }
+
     &__image {
       img {
         object-fit: cover;
@@ -294,6 +295,7 @@
       &:first-child {
         margin-top: 61px;
       }
+
       img {
         border-radius: 6px;
         width: 100%;
