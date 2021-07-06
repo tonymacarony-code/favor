@@ -365,12 +365,21 @@
       @media (max-width: 768px) {
         justify-content: space-around;
       }
+
+      @media (max-width: 425px) {
+        flex-direction: column;
+      }
     }
     &__link {
       text-align: center;
     }
     &__item {
       margin-right: 87px;
+
+      @media (max-width: 425px) {
+        margin-bottom: 25px;
+      }
+
       @media (max-width: 768px) {
         margin-right: 0;
         &:last-child {
@@ -448,6 +457,10 @@
       margin: 0 45px;
       @media (max-width: 768px) {
         display: block;
+      }
+
+      @media (max-width: 425px) {
+        margin: 0;
       }
     }
     &__text {

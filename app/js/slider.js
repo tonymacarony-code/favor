@@ -3,7 +3,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
   });
 });
