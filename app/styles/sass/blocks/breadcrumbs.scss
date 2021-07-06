@@ -1,19 +1,22 @@
 .breadcrumbs {
   ul {
     padding: 10px 16px;
-
     list-style: none;
+
     li {
       display: inline;
       font-size: 12px;
+
       a {
         color: #808080;
         text-decoration: none;
+
         &:hover {
           color: #01447e;
           text-decoration: underline;
         }
       }
+
       & + li {
         &::before {
           padding: 2px;
@@ -23,15 +26,19 @@
       }
     }
   }
+
   &--product-page {
     margin-top: 88px;
+
     ul {
       padding: 0;
     }
   }
+
   &--company {
     margin-left: 219px;
   }
+
   &--news_single,
   &--contacts-page,
   &--product-page,
@@ -39,6 +46,7 @@
   &--news-page {
     margin-top: 88px;
     align-self: flex-start;
+
     ul {
       padding: 0;
     }
@@ -47,6 +55,7 @@
     }
     @media (max-width: 768px) {
       margin-top: 20px;
+
       ul {
         margin-top: 0;
         margin-bottom: 20px;

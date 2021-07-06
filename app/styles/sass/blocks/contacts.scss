@@ -4,6 +4,7 @@
       font-size: 32px;
     }
   }
+
   &__cards {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +15,7 @@
       margin-top: 80px;
     }
   }
+
   &__map {
     iframe {
       width: 100%;
@@ -26,6 +28,7 @@
       }
     }
   }
+
   &__card {
     position: relative;
     max-width: 380px;
@@ -33,6 +36,7 @@
     @media (max-width: 768px) {
       margin-right: 0;
     }
+
     &--group {
       &:nth-child(odd) {
         &::after {
@@ -50,20 +54,24 @@
         }
       }
     }
+
     &-title {
       color: #8a848d;
       text-align: center;
       font-size: 18px;
       font-weight: 500;
     }
+
     ul {
       padding: 0;
+
       li {
         list-style: none;
         text-align: center;
         margin-bottom: 20px;
         line-height: 28px;
         position: relative;
+
         img {
           position: absolute;
           left: 80px;
@@ -76,15 +84,18 @@
             left: 35px;
           }
         }
+
         &:first-child {
           margin-top: 25px;
         }
+
         &:last-child {
           margin-bottom: 80px;
         }
       }
     }
   }
+
   &__address {
     justify-content: center;
     display: flex;

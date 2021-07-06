@@ -6,6 +6,7 @@
       font-size: 32px;
     }
   }
+
   &__cards {
     display: flex;
     flex-direction: column;
@@ -15,11 +16,13 @@
       margin-top: 47px;
     }
   }
+
   &__pagination {
     display: flex;
     justify-content: center;
-    margin: 114px 0 88px 0;
+    margin: 114px 0 88px;
   }
+
   &__card {
     display: flex;
     margin-bottom: 146px;
@@ -34,10 +37,12 @@
       @media (max-width: 768px) {
         max-width: none;
       }
+
       img {
         width: 100%;
       }
     }
+
     &-content {
       margin-left: 32px;
       max-width: 515px;
@@ -55,6 +60,7 @@
           flex-direction: column;
         }
       }
+
       h3 {
         margin: 0;
         font-size: 22px;
@@ -62,14 +68,17 @@
           line-height: 28px;
           font-size: 18px;
         }
+
         a {
           text-decoration: none;
           color: #000;
+
           &:hover {
             text-decoration: underline;
           }
         }
       }
+
       p {
         margin-top: 28px;
         line-height: 22px;
@@ -79,6 +88,7 @@
           margin-top: 9px;
         }
       }
+
       &_row {
         display: flex;
         justify-content: space-between;
@@ -91,10 +101,12 @@
         @media (max-width: 768px) {
           margin-top: 0;
         }
+
         &-date {
           color: #67228f;
           font-weight: 500;
         }
+
         a {
           text-decoration: none;
           padding: 17px 36px;

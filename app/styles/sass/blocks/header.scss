@@ -1,16 +1,18 @@
 .header {
-  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.08);
   position: sticky;
   left: 0;
   top: 0;
   width: 100vw;
   background-color: #fff;
   z-index: 50;
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__logo {
     a {
       img {
@@ -19,6 +21,7 @@
       }
     }
   }
+
   &__burger {
     display: none;
     @media (max-width: 768px) {
@@ -26,8 +29,8 @@
       position: relative;
       width: 22px;
       height: 20px;
+
       span {
-        position: absolute;
         background-color: #000;
         position: absolute;
         left: 0;
@@ -36,6 +39,7 @@
         top: 9px;
         transition: all 0.3s ease 0s;
       }
+
       &::before,
       &::after {
         content: "";
@@ -46,20 +50,25 @@
         left: 0;
         transition: all 0.3s ease 0s;
       }
+
       &::before {
         top: 3px;
       }
+
       &::after {
         bottom: 3px;
       }
+
       &.active {
         span {
           transform: scale(0);
         }
+
         &::before {
           transform: rotate(45deg);
           top: 9px;
         }
+
         &::after {
           transform: rotate(-45deg);
           bottom: 9px;
@@ -67,6 +76,7 @@
       }
     }
   }
+
   &__menu {
     &-link {
       &.active {
@@ -86,21 +96,26 @@
         transition: all 0.3s;
       }
     }
+
     ul {
       @media (max-width: 768px) {
         padding: 0;
         display: block;
         background-color: #fff;
       }
+
       display: flex;
       list-style: none;
+
       li {
         @media (max-width: 768px) {
           padding: 25px;
           text-align: center;
           margin: 0;
         }
+
         margin-right: 28px;
+
         a {
           text-decoration: none;
           color: #000;
@@ -112,6 +127,7 @@
             color: #73319a;
           }
         }
+
         &:last-child {
           margin-right: 0;
         }
@@ -128,6 +144,7 @@
       margin-left: auto;
       padding: 11px 16px;
     }
+
     background-color: $btn;
     padding: 12px 17px;
     border-radius: 38px;
@@ -136,6 +153,7 @@
     font-weight: 600;
     transition: all 0.3s;
     font-size: 14px;
+
     &:hover {
       background-color: #ffdb7e;
     }

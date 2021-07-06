@@ -2,6 +2,7 @@
   h2 {
     text-align: center;
   }
+
   .prev,
   .next {
     display: none;
@@ -28,6 +29,7 @@
   .prev {
     left: 5%;
   }
+
   .next {
     right: 5%;
   }
@@ -35,6 +37,7 @@
   .active .prev {
     left: 0;
   }
+
   .active .next {
     right: 0;
   }
@@ -51,7 +54,6 @@
 
   div {
     text-align: center;
-    padding: 1rem 0;
     color: white;
     font-size: 3rem;
     text-transform: uppercase;

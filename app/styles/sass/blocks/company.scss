@@ -3,6 +3,7 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+
     &-item {
       video {
         width: 100%;
@@ -12,10 +13,12 @@
       }
     }
   }
+
   &__wrapper {
     display: flex;
     margin-top: 52px;
   }
+
   &__aside {
     &-menu {
       position: sticky;
@@ -25,10 +28,12 @@
     &-menu {
       display: flex;
       flex-direction: column;
+
       a {
         text-decoration: none;
         color: #000;
       }
+
       &_btn {
         width: 100%;
         width: 112px;
@@ -45,10 +50,12 @@
         &:last-child {
           margin-bottom: 0;
         }
+
         &.active,
         &:hover {
           color: #73319a;
         }
+
         &.active {
           &::before {
             transition: all 0.3s;
@@ -63,48 +70,57 @@
       }
     }
   }
+
   &__content {
     margin-left: 112px;
     max-width: 843px;
+
     &-aboutus {
       max-width: 733px;
+
       h2 {
         margin-top: 0;
         font-size: 36px;
       }
+
       p {
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 26px;
       }
+
       h3 {
         margin-top: 58px;
         font-size: 24px;
       }
+
       ul {
         li {
           list-style: none;
           margin-bottom: 44px;
           position: relative;
           line-height: 27px;
+
           &:first-child {
             margin-top: 25px;
           }
+
           &:last-child {
             margin-bottom: 85px;
           }
+
           &::before {
             content: "";
             position: absolute;
             background-image: url(../images/text-marker.svg);
             left: -40px;
-
             width: 27px;
             height: 27px;
           }
         }
       }
     }
+
     &-rule {
       position: relative;
 
@@ -115,6 +131,7 @@
         position: relative;
         z-index: 1;
       }
+
       .slider__bg {
         opacity: 0;
         width: 100%;
@@ -126,90 +143,107 @@
         left: 50%;
         transform: translateX(-50%);
         transition: all 0.3s;
-        background: linear-gradient(
-          180deg,
-          #fef6df 0%,
-          #fde8db 47.92%,
-          #fbded7 100%
-        );
+        background:
+          linear-gradient(
+            180deg,
+            #fef6df 0%,
+            #fde8db 47.92%,
+            #fbded7 100%
+          );
 
         &.visible {
           opacity: 1;
         }
+
         &--0 {
-          background-image: linear-gradient(
-            to right bottom,
-            #fdf7e0,
-            #fdf0dc,
-            #fbe9d9,
-            #f8e3d7,
-            #f3ddd6
-          );
+          background-image:
+            linear-gradient(
+              to right bottom,
+              #fdf7e0,
+              #fdf0dc,
+              #fbe9d9,
+              #f8e3d7,
+              #f3ddd6
+            );
         }
+
         &--1 {
-          background-image: linear-gradient(
-            to right bottom,
-            #efffeb,
-            #dbfaf0,
-            #cef3f7,
-            #cde9fa,
-            #d5ddf6
-          );
+          background-image:
+            linear-gradient(
+              to right bottom,
+              #efffeb,
+              #dbfaf0,
+              #cef3f7,
+              #cde9fa,
+              #d5ddf6
+            );
         }
+
         &--2 {
-          background-image: linear-gradient(
-            to bottom,
-            #f9fed4,
-            #ebf9ce,
-            #ddf4c8,
-            #ceefc4,
-            #beeac1
-          );
+          background-image:
+            linear-gradient(
+              to bottom,
+              #f9fed4,
+              #ebf9ce,
+              #ddf4c8,
+              #ceefc4,
+              #beeac1
+            );
         }
+
         &--3 {
-          background-image: linear-gradient(
-            to bottom,
-            #f5ebfe,
-            #eeefff,
-            #eaf2ff,
-            #e9f4fd,
-            #ebf6fa
-          );
+          background-image:
+            linear-gradient(
+              to bottom,
+              #f5ebfe,
+              #eeefff,
+              #eaf2ff,
+              #e9f4fd,
+              #ebf6fa
+            );
         }
+
         &--4 {
-          background-image: linear-gradient(
-            to bottom,
-            #dec2fd,
-            #efc2ed,
-            #f6c4df,
-            #f7c9d5,
-            #f2cfd0
-          );
+          background-image:
+            linear-gradient(
+              to bottom,
+              #dec2fd,
+              #efc2ed,
+              #f6c4df,
+              #f7c9d5,
+              #f2cfd0
+            );
         }
+
         &--5 {
-          background-image: linear-gradient(
-            to right bottom,
-            #e5f8ff,
-            #d2eeff,
-            #c7e3ff,
-            #c4d5ff,
-            #cac5fd
-          );
+          background-image:
+            linear-gradient(
+              to right bottom,
+              #e5f8ff,
+              #d2eeff,
+              #c7e3ff,
+              #c4d5ff,
+              #cac5fd
+            );
         }
+
         &--6 {
-          background-image: linear-gradient(
-            to bottom,
-            #f5ebfe,
-            #eeefff,
-            #eaf2ff,
-            #e9f4fd,
-            #ebf6fa
-          );
+          background-image:
+            linear-gradient(
+              to bottom,
+              #f5ebfe,
+              #eeefff,
+              #eaf2ff,
+              #e9f4fd,
+              #ebf6fa
+            );
         }
       }
+
       &_item {
         padding: 52px 40px 60px 87px;
         border-radius: 31px;
+
         &--first {
           h3 {
             &::before {
@@ -217,6 +251,7 @@
             }
           }
         }
+
         &--second {
           h3 {
             &::before {
@@ -224,6 +259,7 @@
             }
           }
         }
+
         &--third {
           h3 {
             &::before {
@@ -231,6 +267,7 @@
             }
           }
         }
+
         &--fourth {
           h3 {
             &::before {
@@ -238,6 +275,7 @@
             }
           }
         }
+
         &--fifth {
           h3 {
             &::before {
@@ -245,6 +283,7 @@
             }
           }
         }
+
         &--sixth {
           h3 {
             &::before {
@@ -252,6 +291,7 @@
             }
           }
         }
+
         &--seventh {
           h3 {
             &::before {
@@ -264,6 +304,7 @@
           font-size: 24px;
           margin: 0;
           position: relative;
+
           &::before {
             position: absolute;
             font-size: 48px;
@@ -272,19 +313,21 @@
             left: -28px;
           }
         }
+
         p {
           margin-top: 16px;
           margin-bottom: 0;
-
           max-width: 716px;
           line-height: 32px;
           font-size: 18px;
         }
       }
     }
+
     &-awards,
     &-gallery {
       margin-top: 100px;
+
       a {
         text-decoration: none;
         font-size: 18px;
@@ -292,9 +335,11 @@
         position: relative;
         cursor: pointer;
         color: #67228f;
+
         &:hover {
           text-decoration: underline;
         }
+
         &::after {
           content: "\e907";
           position: absolute;
@@ -305,6 +350,7 @@
           top: 50%;
         }
       }
+
       h2 {
         font-size: 36px;
       }
@@ -323,6 +369,7 @@
         }
       }
     }
+
     &-awards {
       a {
         &::after {
@@ -330,6 +377,7 @@
         }
       }
     }
+
     &-gallery {
       &_images {
         margin-top: 40px;
@@ -337,27 +385,32 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 0.2fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-gap: 30px;
       }
+
       &_image {
         img {
           border-radius: 12px;
           max-width: 405px;
           min-height: 100%;
         }
+
         &--1 {
           grid-area: 1 / 1 / 3 / 3;
         }
+
         &--2 {
           grid-area: 1 / 3 / 2 / 4;
         }
+
         &--3 {
           grid-area: 1 / 4 / 2 / 5;
         }
+
         &--4 {
           grid-area: 2 / 3 / 3 / 4;
         }
+
         &--5 {
           grid-area: 2 / 4 / 3 / 5;
         }

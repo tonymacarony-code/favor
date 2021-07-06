@@ -8,6 +8,7 @@
       margin-top: 12px;
     }
   }
+
   &__images {
     display: flex;
     margin-top: 64px;
@@ -21,6 +22,7 @@
       justify-content: center;
       align-items: center;
     }
+
     &-col {
       display: block;
       @media (max-width: 1024px) {
@@ -28,16 +30,19 @@
       }
       @media (max-width: 425px) {
         margin-top: 25px;
+
         img {
           margin: 0 15px;
         }
       }
     }
+
     &-main {
       margin-left: 10px;
       @media (max-width: 426px) {
         margin-left: 0;
       }
+
       img {
         width: 100%;
         cursor: pointer;
@@ -48,8 +53,10 @@
       }
     }
   }
+
   &__image {
     margin-bottom: 7px;
+
     img {
       max-width: 100px;
       cursor: pointer;
@@ -60,9 +67,11 @@
       }
     }
   }
+
   &__info {
     max-width: 578px;
     margin-left: 45px;
+
     &-group {
       @media (max-width: 426px) {
         display: flex;
@@ -73,7 +82,7 @@
           display: flex;
           margin: 0;
           justify-content: center;
-          padding: 17px 0px;
+          padding: 17px 0;
           margin-bottom: 53px;
         }
       }
@@ -97,26 +106,31 @@
         margin-top: 25px;
       }
     }
+
     .term {
       margin: 0;
       font-weight: 600;
       color: #67228f;
     }
+
     p {
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 36px;
       text-align: justify;
+
       &:nth-child(4) {
         margin-top: 36px;
         margin-bottom: 0;
       }
+
       &:nth-child(5) {
         margin-top: 25px;
         @media (max-width: 426px) {
           margin-top: 0;
         }
       }
+
       &:last-child {
         margin-top: 26px;
         margin-bottom: 140px;
@@ -130,6 +144,7 @@
       }
     }
   }
+
   &__items {
     ul {
       padding: 0;
@@ -141,6 +156,7 @@
         justify-content: center;
         margin-top: 50px;
       }
+
       li {
         list-style: none;
         @media (max-width: 1024px) {
@@ -149,21 +165,24 @@
       }
     }
   }
+
   &__item {
     margin-right: 12px;
     @media (max-width: 426px) {
       margin-right: 30px;
       font-size: 14px;
     }
+
     &-title {
       background-color: #f3f1f1;
       line-height: 38px;
-      border-radius: 12px 12px 0px 0px;
+      border-radius: 12px 12px 0 0;
       font-size: 14px;
       font-weight: 600;
       text-align: center;
       padding: 8px 15px 10px;
     }
+
     &-value {
       background-color: #aba2a2;
       border-radius: 0 0 12px 12px;

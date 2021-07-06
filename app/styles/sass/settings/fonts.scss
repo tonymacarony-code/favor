@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Adigiana Extreme";
-  src: url("../fonts/Adigiana\ Extreme.woff2") format("woff2"),
+  src:
+    url("../fonts/Adigiana\ Extreme.woff2") format("woff2"),
     url("../fonts/Adigiana\ Extreme.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -8,7 +9,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?ovfl9x");
-  src: url("../fonts/icomoon.eot?ovfl9x#iefix") format("embedded-opentype"),
+  src:
+    url("../fonts/icomoon.eot?ovfl9x#iefix") format("embedded-opentype"),
     url("../fonts/icomoon.ttf?ovfl9x") format("truetype"),
     url("../fonts/icomoon.woff?ovfl9x") format("woff"),
     url("../fonts/icomoon.svg?ovfl9x#icomoon") format("svg");
@@ -33,36 +35,46 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope:before {
+.icon-envelope::before {
   content: "\e906";
 }
-.icon-calendar:before {
+
+.icon-calendar::before {
   content: "\e900";
 }
-.icon-map-marker:before {
+
+.icon-map-marker::before {
   content: "\e901";
 }
-.icon-youtube:before {
+
+.icon-youtube::before {
   content: "\e902";
 }
-.icon-navigate_before:before {
+
+.icon-navigate_before::before {
   content: "\e903";
 }
-.icon-navigate_next:before {
+
+.icon-navigate_next::before {
   content: "\e907";
 }
-.icon-facebook:before {
+
+.icon-facebook::before {
   content: "\e904";
 }
-.icon-phone:before {
+
+.icon-phone::before {
   content: "\e942";
 }
-.icon-clock:before {
+
+.icon-clock::before {
   content: "\e94e";
 }
-.icon-instagram:before {
+
+.icon-instagram::before {
   content: "\ea92";
 }
-.icon-youtube1:before {
+
+.icon-youtube1::before {
   content: "\ea9d";
 }
